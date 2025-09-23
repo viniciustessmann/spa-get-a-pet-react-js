@@ -10,7 +10,10 @@ import Register from "./components/pages/Auth/Register";
 import Home from "./components/pages/Home";
 import Message from "./components/layout/Message";
 
+import MyPets from "./components/pages/Pets/MyPets";
+
 import { UserProvider } from "./context/UserContext";
+import AddPet from "./components/pages/Pets/AddPet";
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
         <Message />
         <Container>
           <Routes>
+            <Route path="/pets/mypets" element={<MyPets />} />
+            <Route path="/pets/add" element={<AddPet />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/" element={<Home />} />
