@@ -16,7 +16,7 @@ function Message() {
 
             setTimeout( () => {
                 setVisibility(false)
-            }, 300)
+            }, 1500)
         })
     }, [])
 
